@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Platform</title>
+    <link rel="stylesheet" href="sys.css">
+</head>
+<body>
+    <header>
+        <h1>Marriage Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Marriage Platform</h2>
+        <p>Find your perfect match and start your journey together.</p>
+    </section>
+    
+    <section id="register">
+        <h2>Register</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" required></textarea>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    <section id="search">
+        <h2>Search for Partners</h2>
+        <form>
+            <label for="search-name">Name:</label>
+            <input type="text" id="search-name" name="search-name">
+            
+            <label for="search-gender">Gender:</label>
+            <select id="search-gender" name="search-gender">
+                <option value="any">Any</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="search-age">Age Range:</label>
+            <input type="number" id="search-age-min" name="search-age-min" placeholder="Min">
+            <input type="number" id="search-age-max" name="search-age-max" placeholder="Max">
+            
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>Select a profile from the search results to view details.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Marriage Platform</p>
+    </footer>
+</body>
+</html>
